@@ -1,2 +1,2 @@
 openai>=1.6.0
-pinecone-client>=5.0.0
+pinecone>=5.0.0
