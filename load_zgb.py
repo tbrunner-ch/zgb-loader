@@ -8,6 +8,9 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_INDEX_NAME = os.getenv("PINECONE_INDEX_NAME", "ch-family-law")
 
+print("DEBUG OPENAI_API_KEY:", repr(os.getenv("OPENAI_API_KEY")))
+print("DEBUG ALL KEYS:", list(os.environ.keys()))
+
 if not OPENAI_API_KEY:
     raise RuntimeError("OPENAI_API_KEY nicht gesetzt")
 if not PINECONE_API_KEY:
